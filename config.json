@@ -1,0 +1,23 @@
+{
+  "ini": "/var/www/cgi-bin/php-7.4.2/php.ini",
+  "cgi": "/var/www/cgi-bin/php-7.4.2/bin/php-cgi",
+  "port": ":80",
+  "headers": {
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "Content-Type"
+  },
+  "route": {
+    "front.project.local": {
+      "root": "/var/www/project/web",
+      "index": "index.html"
+    },
+    "admin.project.local": {
+      "root": "/var/www/project/backend",
+      "index": "index.php"
+    },
+    "api.project.local": {
+      "root": "/var/www/project/api",
+      "index": "index.php"
+    }
+  }
+}
